@@ -38,9 +38,7 @@ If it does not work on your version, please contact me.
 
 * Embed ResourceHacker.exe into the main executable to make stand-alone.
 * Add more ae version support
-* Actually center the UI lol
 * change way the program detects the after effects directory, was in a rush so it's a bunch of slow if statements
-* right click picture box to save as
 * replace ae_splash 2x and 3x too just in case
 
 ## Credit
