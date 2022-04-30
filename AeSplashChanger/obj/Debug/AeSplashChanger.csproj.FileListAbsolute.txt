@@ -1,0 +1,11 @@
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\bin\Debug\AeSplashChanger.exe.config
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\bin\Debug\AeSplashChanger.exe
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\bin\Debug\AeSplashChanger.pdb
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.csproj.AssemblyReference.cache
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.csproj.SuggestedBindingRedirects.cache
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.Properties.Resources.resources
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.csproj.GenerateResource.cache
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.csproj.CoreCompileInputs.cache
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.exe
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.pdb
+C:\Users\pauls\source\repos\AeSplashChanger\AeSplashChanger\obj\Debug\AeSplashChanger.MainForm.resources
