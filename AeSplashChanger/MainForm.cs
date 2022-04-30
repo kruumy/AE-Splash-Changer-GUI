@@ -16,6 +16,7 @@ namespace AeSplashChanger
         private void Form1_Load(object sender, EventArgs e)
         {
             CheckResourceHacker();
+            CheckAeRunning();
             dllpath = GetDllDirectroy();
             if (dllpath == "None")
             {
@@ -69,15 +70,16 @@ namespace AeSplashChanger
         }
         private string ShowSelectDir()
         {
+            MessageBox.Show("Could Not Find AE Install\nPlease Select After Effects (Version)\\Support Files", "Error");
             aefolderBrowserDialog.ShowDialog();
             string selectedPath = aefolderBrowserDialog.SelectedPath;
-            if (selectedPath == null || selectedPath.Contains("Support Files") || !selectedPath.Contains("After Effects"))
+            if (selectedPath == null)
             {
                 MessageBox.Show("Please Select Valid Directory", "Error");
                 Environment.Exit(0);
             }
 
-            return selectedPath;
+            return selectedPath + "\\AfterFXLib.dll";
         }
         private void SetAeSplash()
         {
@@ -112,6 +114,20 @@ namespace AeSplashChanger
                 MessageBox.Show("Could Not Find ResourceHacker.exe", "Error");
                 Environment.Exit(0);
             }
+        }
+        private void CheckAeRunning()
+        {
+            Process[] pname = Process.GetProcessesByName("AfterFX");
+            if (pname.Length == 0)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Please Close AfterFX", "Error");
+                Environment.Exit(0);
+            }
+
         }
         private void exportbtn_Click(object sender, EventArgs e)
         {
@@ -161,7 +177,17 @@ namespace AeSplashChanger
 
             //RH.Kill();
 
-            File.Replace("AfterFXLib.dll", dllpath, dllpath + ".bak");
+            try
+            {
+                File.Replace("AfterFXLib.dll", dllpath, dllpath + ".bak");
+            }
+            catch
+            {
+                File.Delete(dllpath + ".bak");
+                File.Copy(dllpath, dllpath + ".bak");
+                File.Delete(dllpath);
+                File.Move("AfterFXLib.dll", dllpath);
+            }
 
             MessageBox.Show("Exported New AfterFXLib.dll Successfully", "Notice");
         }
