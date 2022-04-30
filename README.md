@@ -6,6 +6,7 @@
 
 <div align="center">
   <a href="https://github.com/kruumy/AE-Splash-Changer-GUI/releases"><img src="https://img.shields.io/github/v/release/kruumy/AE-Splash-Changer-GUI?label=Latest%20version&style=flat-square"></a>
+  <a href="https://github.com/kruumy/AE-Splash-Changer-GUI/releases""><img src="https://img.shields.io/github/downloads/kruumy/AE-Splash-Changer-GUI/total"></a>
   <a href="https://paypal.me/JPauls281"><img src="https://img.shields.io/badge/Donate-Paypal-orange?style=flat-square"></a>
 </div>
 
