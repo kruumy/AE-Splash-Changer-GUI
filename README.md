@@ -35,6 +35,7 @@ Tested On:
 
 * Embed ResourceHacker.exe into the main executable to make stand-alone.
 * Add more ae verions support
+* Actually center the UI lol
 
 ## Credit
 
