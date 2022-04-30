@@ -125,7 +125,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(635, 285);
+            this.ClientSize = new System.Drawing.Size(628, 285);
             this.Controls.Add(this.Github);
             this.Controls.Add(this.defaultsbtn);
             this.Controls.Add(this.splashLabel);

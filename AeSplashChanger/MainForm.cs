@@ -17,6 +17,7 @@ namespace AeSplashChanger
         {
             CheckResourceHacker();
             CheckAeRunning();
+            CheckIfMultipeInstance();
             dllpath = GetDllDirectroy();
             if (dllpath == "None")
             {
@@ -30,10 +31,10 @@ namespace AeSplashChanger
             string ae22dir = @"C:\Program Files\Adobe\Adobe After Effects 2022\Support Files\AfterFXLib.dll";
             string ae21dir = @"C:\Program Files\Adobe\Adobe After Effects 2021\Support Files\AfterFXLib.dll";
             string ae20dir = @"C:\Program Files\Adobe\Adobe After Effects 2020\Support Files\AfterFXLib.dll";
-            string ae19dir = @"C:\Program Files\Adobe\Adobe After Effects 2019\Support Files\AfterFXLib.dll";
-            string ae18dir = @"C:\Program Files\Adobe\Adobe After Effects 2018\Support Files\AfterFXLib.dll";
-            string ae17dir = @"C:\Program Files\Adobe\Adobe After Effects 2017\Support Files\AfterFXLib.dll";
-            string ae16dir = @"C:\Program Files\Adobe\Adobe After Effects 2016\Support Files\AfterFXLib.dll";
+            string ae19dir = @"C:\Program Files\Adobe\Adobe After Effects CC 2019\Support Files\AfterFXLib.dll";
+            string ae18dir = @"C:\Program Files\Adobe\Adobe After Effects CC 2018\Support Files\AfterFXLib.dll";
+            string ae17dir = @"C:\Program Files\Adobe\Adobe After Effects CC 2017\Support Files\AfterFXLib.dll";
+            string ae16dir = @"C:\Program Files\Adobe\Adobe After Effects CC 2016\Support Files\AfterFXLib.dll";
 
             if (File.Exists(ae22dir))
             {
@@ -73,7 +74,7 @@ namespace AeSplashChanger
             MessageBox.Show("Could Not Find AE Install\nPlease Select After Effects (Version)\\Support Files", "Error");
             aefolderBrowserDialog.ShowDialog();
             string selectedPath = aefolderBrowserDialog.SelectedPath;
-            if (selectedPath == null)
+            if (selectedPath == null || !selectedPath.Contains("Support Files"))
             {
                 MessageBox.Show("Please Select Valid Directory", "Error");
                 Environment.Exit(0);
@@ -128,6 +129,15 @@ namespace AeSplashChanger
                 Environment.Exit(0);
             }
 
+        }
+        private void CheckIfMultipeInstance()
+        {
+            Process[] pname = Process.GetProcessesByName("AeSplashChanger");
+            if (pname.Length > 1)
+            {
+                MessageBox.Show("Multiple Instances Of AeSplashChanger Running\nPlease Close Them In Task Manager", "Error");
+                Environment.Exit(0);
+            }
         }
         private void exportbtn_Click(object sender, EventArgs e)
         {
@@ -221,7 +231,13 @@ namespace AeSplashChanger
         {
             File.Delete(dllpath);
             File.Copy(dllpath + ".original", dllpath);
-            File.Delete("AE_SPLASH.png");
+            try
+            {
+                File.Delete("AE_SPLASH.png");
+            }
+            catch
+            {
+            }
             MessageBox.Show("Restored Defaults\nPlease Restart Program", "Notice");
         }
     }
