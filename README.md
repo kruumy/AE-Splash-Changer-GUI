@@ -1,2 +1,50 @@
-# AE-Splash-Changer-GUI
-Easily Customize the After Effects Splash Screen!
+<h1 align="center">
+  <br>
+  AE Splash Changer GUI Beta
+  <br>
+</h1>
+
+<div align="center">
+  <a href="https://github.com/kruumy/AE-Splash-Changer-GUI/releases"><img src="https://img.shields.io/github/v/release/kruumy/AE-Splash-Changer-GUI?label=Latest%20version&style=flat-square"></a>
+  <a href="https://paypal.me/JPauls281"><img src="https://img.shields.io/badge/Donate-Paypal-orange?style=flat-square"></a>
+</div>
+
+<h4 align="center">Easily Customize the After Effects Splash Screen!</a>!</h4>
+<div align="center">
+  <a href="https://github.com/kruumy/AE-Splash-Changer-GUI/blob/main/preview.png">
+    <img src="preview.png" alt="Preivew" width="300" height="300">
+  </a>
+</div>
+
+## Installation
+
+1. Download the latest version from **releases**. -->
+2. Extract the zip and run the AeSplashChanger.exe
+3. Import Your Custom Splash Screen
+4. Then Export
+5. Done!
+
+## Support
+
+Should Support Most AE Versions 2016++
+
+Tested On:
+* After Effects 2022
+
+## Todo
+
+* Embed ResourceHacker.exe into the main executable to make stand-alone.
+* Add more ae verions support
+
+## Credit
+
+- [ResourceHacker](http://angusj.com/resourcehacker/)
+
+
+---
+
+**Please contact me if you find any bugs or have any suggestions.**
+#### Twitter: @kruumy
+#### Discord: kruumy#9443
+
+
