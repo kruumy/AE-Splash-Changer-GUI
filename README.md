@@ -30,7 +30,8 @@
 Should Support Most AE Versions 2016++
 
 Tested On:
-* After Effects 2022
+* AE 2022
+* AE 2019
 
 If it does not work on your version, please contact me.
 
