@@ -31,6 +31,8 @@ Should Support Most AE Versions 2016++
 Tested On:
 * After Effects 2022
 
+If it does not work on your version, please contact me.
+
 ## Todo
 
 * Embed ResourceHacker.exe into the main executable to make stand-alone.
