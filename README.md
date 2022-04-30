@@ -38,7 +38,7 @@ If it does not work on your version, please contact me.
 ## Todo
 
 * Embed ResourceHacker.exe into the main executable to make stand-alone.
-* Add more ae verions support
+* Add more ae version support
 * Actually center the UI lol
 
 ## Credit
