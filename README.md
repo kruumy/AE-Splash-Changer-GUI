@@ -24,6 +24,8 @@
 4. Then Export
 5. Done!
 
+Note: If there is a popup to select a folder when you start, select your main AE folder.
+
 ## Support
 
 Should Support Most AE Versions 2016++
