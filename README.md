@@ -12,7 +12,7 @@
 <h4 align="center">Easily Customize the After Effects Splash Screen!</a>!</h4>
 <div align="center">
   <a href="https://github.com/kruumy/AE-Splash-Changer-GUI/blob/main/preview.png">
-    <img src="preview.png" alt="Preivew" width="630" height="278">
+    <img src="preview.png" alt="Preivew">
   </a>
 </div>
 
